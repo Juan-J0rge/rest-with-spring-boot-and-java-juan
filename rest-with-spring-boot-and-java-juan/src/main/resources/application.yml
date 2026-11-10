@@ -1,1 +1,12 @@
-spring.application.name=rest-with-spring-boot-and-java-juan
+spring:
+  application:
+    name: rest-with-spring-boot-juan
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rest_with_spring_boot_juan?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
